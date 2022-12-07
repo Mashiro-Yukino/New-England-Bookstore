@@ -49,7 +49,31 @@ def add_book():
     status = request.form['status']
     booktype = request.form['booktype']
 
-    query = f"INSERT INTO book (authorId, pricePerDay, bookName, status, booktype) VALUES ('{authorId}', '{pricePerDay}', '{bookName}', '{status}', '{booktype}')"
+    query = f"INSERT INTO book (authorId, pricePerDay, bookName, status, booktype) " \
+            f"VALUES ('{authorId}', '{pricePerDay}', '{bookName}', '{status}', '{booktype}')"
     cursor.execute(query)
     db.get_db().commit()
     return 'Book added successfully'
+
+
+@books.route('/bookinfo', methods=['POST'])
+def add_book_info():
+    current_app.logger.info(request.form)
+    cursor = db.get_db().cursor()
+
+    authorId = request.form['authorId']
+    bookName = request.form['bookName']
+
+    # query is to list the information of the book
+    query = f"SELECT * FROM book WHERE bookName = '{bookName}'"\
+            f"AND authorId = '{authorId}'"
+    cursor.execute(query)
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
