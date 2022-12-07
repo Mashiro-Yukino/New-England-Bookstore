@@ -1,5 +1,3 @@
-
-
 from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
@@ -56,18 +54,12 @@ def add_book():
     return 'Book added successfully'
 
 
-@books.route('/bookinfo', methods=['POST'])
-def add_book_info():
-    current_app.logger.info(request.form)
+@books.route('/bookinfo/<authorId>/<bookName>', methods=['GET'])
+def add_book_info(authorId, bookName):
+
     cursor = db.get_db().cursor()
-
-    authorId = request.form['authorId']
-    bookName = request.form['bookName']
-
-    # query is to list the information of the book
-    query = f"SELECT * FROM book WHERE bookName = '{bookName}'"\
-            f"AND authorId = '{authorId}'"
-    cursor.execute(query)
+    cursor.execute(
+        f"SELECT * FROM book WHERE authorId = '{authorId}' AND bookName = '{bookName}'")
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()

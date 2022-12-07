@@ -36,9 +36,9 @@ def create_app():
 
     # Register the routes that we just imported so they can be properly handled
     app.register_blueprint(views,       url_prefix='/bookstore')
-    app.register_blueprint(customers,   url_prefix='/bookstore')
+    app.register_blueprint(customers,   url_prefix='/cust')
     app.register_blueprint(authors,    url_prefix='/bookstore')
-    app.register_blueprint(employees,    url_prefix='/bookstore')
+    app.register_blueprint(employees,    url_prefix='/emp')
     app.register_blueprint(books,    url_prefix='/bk')
 
     return app
