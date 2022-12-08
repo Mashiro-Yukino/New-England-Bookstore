@@ -21,24 +21,6 @@ def get_customers():
     return the_response
 
 
-# @books.route('/book', methods=['POST'])
-# def add_book():
-#     current_app.logger.info(request.form)
-#     cursor = db.get_db().cursor()
-#
-#     authorId = request.form['authorId']
-#     pricePerDay = request.form['pricePerDay']
-#     bookName = request.form['bookName']
-#     status = request.form['status']
-#     booktype = request.form['booktype']
-#
-#     query = f"INSERT INTO book (authorId, pricePerDay, bookName, status, booktype) " \
-#             f"VALUES ('{authorId}', '{pricePerDay}', '{bookName}', '{status}', '{booktype}')"
-#     cursor.execute(query)
-#     db.get_db().commit()
-#     return 'Book added successfully'
-
-
 @employees.route('/updateCustomerInfo', methods=['POST'])
 def update_customer_info():
     current_app.logger.info(request.form)
@@ -55,4 +37,49 @@ def update_customer_info():
     return 'Customer info updated successfully'
 
 
+# @books.route('/bookinfo/<authorId>/<bookName>', methods=['GET'])
+# def add_book_info(authorId, bookName):
+#
+#     cursor = db.get_db().cursor()
+#     cursor.execute(
+#         f"SELECT * FROM book WHERE authorId = '{authorId}' AND bookName = '{bookName}'")
+#     row_headers = [x[0] for x in cursor.description]
+#     json_data = []
+#     theData = cursor.fetchall()
+#     for row in theData:
+#         json_data.append(dict(zip(row_headers, row)))
+#     the_response = make_response(jsonify(json_data))
+#     the_response.status_code = 200
+#     the_response.mimetype = 'application/json'
+#     return the_response
 
+@employees.route('/generateReport/<reporttype>/<searchYear>', methods=['GET'])
+def generate_report(reporttype, searchYear):
+    cursor = db.get_db().cursor()
+    if reporttype == 'profit':
+        cursor.execute(f"SELECT bookName, sum(pricePerDay * (return_time - borrow_time)) as profit "
+                       f"FROM book NATURAL JOIN reserve "
+                       f"WHERE year(borrow_time) = {searchYear} "
+                       f"GROUP BY bookId "
+                       f"ORDER BY profit DESC")
+
+    elif reporttype == 'authors':
+        # Rank the total number of books borrowed in a year by genre
+        cursor.execute(f"SELECT concat(firstName, ' ', midName, ' ', lastName) as authorName, count(authorId) as bookCount "
+                       f"FROM book NATURAL JOIN author NATURAL JOIN reserve "
+                       f"WHERE year(borrow_time) = {searchYear} "
+                       f"GROUP BY authorId "
+                       f"ORDER BY bookCount DESC")
+    elif reporttype == 'genre':
+        # Rank the total number of books borrowed in a year written by each author
+        cursor.execute(f"SELECT category, count(category) as count from bookGenre natural join reserve "
+                       f"WHERE YEAR(borrow_time) = {searchYear} GROUP BY category ORDER BY count DESC")
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
