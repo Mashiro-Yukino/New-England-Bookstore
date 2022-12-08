@@ -1,25 +1,10 @@
-# MySQL + Flask Boilerplate Project
+# 111111
 
-This repo contains a boilerplate setup for spinning up 2 docker containers: 
-1. A MySQL 8 container for obvious reasons
-1. A Python Flask container to implement a REST API
+![203210674-cd210cf5-050f-43a5-bd2e-a396203e32cd](https://user-images.githubusercontent.com/67991315/206334418-92798d5a-111b-4b62-aeb2-b60a92a1ee0e.png)
 
-## How to setup and start the containers
-**Important** - you need Docker Desktop installed
+---
 
-1. Clone this repository.  
-1. Create a file named `db_root_password.txt` in the `secrets/` folder and put inside of it the root password for MySQL. 
-1. Create a file named `db_password.txt` in the `secrets/` folder and put inside of it the password you want to use for the `webapp` user. 
-1. In a terminal or command prompt, navigate to the folder with the `docker-compose.yml` file.  
-1. Build the images with `docker compose build`
-1. Start the containers with `docker compose up`.  To run in detached mode, run `docker compose up -d`. 
-
-## For setting up a Conda Web-Dev environment:
-
-1. `conda create -n webdev python=3.9`
-1. `conda activate webdev`
-1. `pip install flask flask-mysql flask-restful cryptography flask-login`
+![203208285-cc9af1e3-5a50-4b97-ad95-f3c7d5fd6869](https://user-images.githubusercontent.com/67991315/206334427-21b96772-2469-4e8f-a44c-a404f37dc4d6.png)
 
 
-
-
+# 2222222
