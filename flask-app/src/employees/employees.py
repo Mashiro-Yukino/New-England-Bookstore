@@ -37,22 +37,6 @@ def update_customer_info():
     return 'Customer info updated successfully'
 
 
-# @books.route('/bookinfo/<authorId>/<bookName>', methods=['GET'])
-# def add_book_info(authorId, bookName):
-#
-#     cursor = db.get_db().cursor()
-#     cursor.execute(
-#         f"SELECT * FROM book WHERE authorId = '{authorId}' AND bookName = '{bookName}'")
-#     row_headers = [x[0] for x in cursor.description]
-#     json_data = []
-#     theData = cursor.fetchall()
-#     for row in theData:
-#         json_data.append(dict(zip(row_headers, row)))
-#     the_response = make_response(jsonify(json_data))
-#     the_response.status_code = 200
-#     the_response.mimetype = 'application/json'
-#     return the_response
-
 @employees.route('/generateReport/<reporttype>/<searchYear>', methods=['GET'])
 def generate_report(reporttype, searchYear):
     cursor = db.get_db().cursor()
