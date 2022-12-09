@@ -57,7 +57,6 @@ def get_all_customerID():
     return the_response
 
 
-
 @customers.route('/borrowingHistory/<custID>/<searchCondition>/<searchYear>', methods=['GET'])
 def get_borrowing_history(custID, searchCondition, searchYear):
     cursor = db.get_db().cursor()
@@ -88,7 +87,6 @@ def get_borrowing_history(custID, searchCondition, searchYear):
     return the_response
 
 
-
 @customers.route('/reserveInfo', methods=['GET'])
 def get_reserve_info():
     cursor = db.get_db().cursor()
@@ -102,5 +100,7 @@ def get_reserve_info():
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
     return the_response
+
+
 
 
