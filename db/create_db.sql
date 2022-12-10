@@ -56,6 +56,36 @@ VALUES
     (1500, 'platinum', 'Tatiania', 'T', 'Smith', '1990-07-01');
 
 
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (370.0, 'platinum', 'Geke', 'Smith', '1987-02-27');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (713.0, 'regular', 'Yetts', 'Havick', '2002-09-18');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (783.6, 'platinum', 'Stair', 'Wolsey', '1986-05-28');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (87.0, 'platinum', 'Kepp', 'Leindecker', '1989-03-06');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (161.1, 'gold', 'Jakes', 'Leindecker', '2007-02-27');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (961.8, 'silver', 'Bertrand', 'Smith', '1998-09-28');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (958.5, 'silver', 'Baldry', 'Havick', '2003-03-29');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (526.6, 'platinum', 'Tritton', 'Wolsey', '2004-08-02');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (75.5, 'gold', 'Iwanowicz', 'Leindecker', '1994-08-01');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (736.5, 'gold', 'Gourlie', 'Andrez', '1982-03-05');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (236.8, 'gold', 'Nathon', 'Ca', '2003-05-29');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (117.6, 'regular', 'McFadzean', 'Ca', '1995-02-13');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (750.8, 'regular', 'Lomath', 'Andrez', '2010-06-13');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (453.0, 'platinum', 'Woloschinski', 'Wolsey', '1989-09-11');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (303.5, 'platinum', 'Parade', 'Leindecker', '2006-10-17');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (637.8, 'regular', 'Kuhl', 'Leindecker', '1997-05-27');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (457.1, 'regular', 'Borit', 'Sacks', '1981-09-01');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (354.4, 'gold', 'Sacks', 'Male', '1991-04-18');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (726.8, 'gold', 'McIndrew', 'Sacks', '1984-01-26');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (280.0, 'regular', 'Demaine', 'Cockren', '1991-11-20');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (607.2, 'gold', 'Cockren', 'Male', '2005-04-21');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (168.3, 'silver', 'Kobu', 'Cockren', '1990-07-07');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (999.8, 'gold', 'Truckett', 'Doud', '1999-01-14');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (919.2, 'regular', 'Rottcher', 'Truckett', '1982-06-14');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (765.5, 'silver', 'Whipp', 'Whipp', '1992-03-17');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (909.7, 'silver', 'Athridge', 'Cockren', '2007-08-24');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (428.7, 'platinum', 'Doud', 'Male', '1986-12-12');
+insert into customer (balance, memberType, firstName, lastName, birth_date) values (17.3, 'regular', 'Potter', 'Potter', '2006-12-29');
+
+
 
 -- make a author table, it has authorId, deposit, firstName, midName, lastName, contactEmail.
 -- midName can be null. The default deposit is 0.
@@ -85,16 +115,27 @@ ALTER TABLE author AUTO_INCREMENT = 100000000;
 
 INSERT INTO author (deposit, firstName, midName, lastName, contactEmail)
 VALUES
-    (1000, 'Colas', 'A', 'Hen', 'cola@gmail.com');
+    (1000, 'Colas', 'Aas', 'Hen', 'cola123@gmail.com'),
+    (90, 'Pauletta', 'Bas', 'Roman', 'paulettaB@northeastern.com'),
+    (11, 'Lesly', 'Casd', 'Hincham', '343332123@qq.com'),
+    (123, 'Myrtia', 'D23', 'Downton', '126783123@qq.com'),
+    (223, 'Hilde', 'E1', 'Hankard','2323123124@qq.com'),
+    (89, 'Lynnett', 'Ffd', 'Bartoszewicz', 'Lynnett@gmail.com'),
+    (123, 'Colas', 'Aas', 'Hen', 'cola@gmail.com'),
+    (9230, 'Pauletta', 'Bas', 'Lesly', 'paulet123taB@northeastern.com'),
+    (11, 'Lesly', 'Casd', 'Hankard', '12312376182@qq.com'),
+    (1123, 'Myrtia', 'D23', 'Hen', '126783123123@qq.com'),
+    (223, 'Hilde', 'E1', 'Hankard','12367812233@qq.com'),
+    (89, 'Lynnett', 'Ffd', 'Roman', 'Lyn123nett@gmail.com');
 
 INSERT INTO author (firstName, midName, lastName, contactEmail)
 VALUES
     ('Colas', 'A', 'Balk', 'cola2@gmail.com'),
-    ('Pauletta', 'B', 'Roman', 'paulettaB@northeastern.com'),
-    ('Lesly', 'C', 'Hincham', '12312376182@qq.com'),
-    ('Myrtia', 'D', 'Downton', '126783123@qq.com'),
-    ('Hilde', 'E', 'Hankard','123678123@qq.com'),
-    ('Lynnett', 'F', 'Bartoszewicz', 'Lynnett@gmail.com');
+    ('Pauletta', 'B', 'Roman', 'pau23211lettaB@northeastern.com'),
+    ('Lesly', 'C', 'Hincham', '123123712312316182@qq.com'),
+    ('Myrtia', 'D', 'Downton', '12621312783123@qq.com'),
+    ('Hilde', 'E', 'Hankard','123678121231231233@qq.com'),
+    ('Lynnett', 'F', 'Bartoszewicz', 'Lynne12312312tt@gmail.com');
 
 insert into author (firstName, lastName, contactEmail, midName) values ('Logan', 'Blackleech', 'lblackleech0@theguardian.com', 'a');
 insert into author (firstName, lastName, contactEmail, midName) values ('Alane', 'Cunio', 'acunio1@is.gd', 'b');
@@ -177,6 +218,18 @@ insert into employee (employeeAccount, employeePassword, firstName, lastName) va
 insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('sbrotheridgei@indiatimes.com', '50-578-2805', 'Saudra', 'Brotheridge');
 insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('ghorsefieldj@twitpic.com', '76-781-2733', 'Gweneth', 'Horsefield');
 
+insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('ccosdasstya@aboutads.info', '83-523-4260', 'Cecily', 'Costy');
+insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('asdasd@globo.com', '47-551-6245', 'Remington', 'Orro');
+insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('1231213@github.com', '97-631-3490', 'Ilyse', 'Britee');
+insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('asdasdas@ucla.edu', '85-118-4879', 'Xever', 'Berk');
+insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('123123@ucsd.edu', '24-907-2482', 'Mathilde', 'Wikey');
+insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('2321231@about.me', '06-864-7933', 'Lory', 'Tagg');
+insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('sdadasdas@simplemachines.org', '10-670-2096', 'Phillie', 'Dmitriev');
+insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('12312321@dyndns.org', '39-375-8035', 'Bartholemy', 'Gleeton');
+insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('qswdqweq@indiatimes.com', '50-578-2805', 'Saudra', 'Brotheridge');
+insert into employee (employeeAccount, employeePassword, firstName, lastName) values ('asxdasdas@twitpic.com', '76-781-2733', 'Gweneth', 'Horsefield');
+
+
 
 --  withdraws money table ------------------
 -- make a Withdraws_Money table, it has transactionId, authorId, employeeId, transaction_time, transaction_amount.
@@ -220,6 +273,209 @@ VALUES
     (100000002, 300000002, 30000),
     (100000003, 300000003, 40),
     (100000004, 300000004, 50);
+    
+    
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000005, 300000032, 7.17);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000028, 300000003, 681.68);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000006, 300000029, 227.84);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000021, 605.82);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000014, 300000004, 938.99);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000027, 300000002, 247.06);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000004, 850.97);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000018, 300000019, 224.03);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000020, 172.6);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000014, 300000015, 340.29);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000021, 300000003, 166.52);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000007, 300000001, 780.25);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000009, 300000028, 368.75);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000007, 300000034, 355.16);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000014, 300000023, 7.69);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000019, 300000006, 310.39);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000020, 300000010, 762.31);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000028, 300000029, 688.34);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000002, 300000029, 989.95);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000002, 300000028, 168.62);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000001, 300000000, 332.24);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000031, 104.09);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000024, 156.11);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000021, 300000022, 760.96);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000002, 300000020, 790.99);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000024, 300000021, 488.88);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000017, 300000030, 70.74);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000026, 300000013, 885.26);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000011, 300000014, 511.68);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000019, 300000027, 639.5);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000028, 300000034, 322.31);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000030, 300000028, 837.36);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000002, 300000008, 472.62);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000030, 300000010, 364.04);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000016, 300000028, 495.45);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000008, 300000012, 951.22);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000003, 300000023, 943.7);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000027, 300000015, 31.5);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000022, 300000025, 643.66);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000032, 300000009, 262.71);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000031, 300000023, 692.6);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000016, 300000023, 5.04);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000016, 300000028, 706.76);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000016, 300000004, 203.43);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000017, 52.39);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000009, 300000006, 345.56);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000006, 300000005, 307.65);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000028, 636.89);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000029, 300000020, 362.26);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000007, 300000014, 655.06);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000008, 300000024, 811.23);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000007, 825.13);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000008, 300000031, 788.03);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000028, 710.64);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000018, 300000025, 386.47);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000019, 300000018, 852.14);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000023, 300000018, 442.24);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000010, 300000004, 468.86);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000007, 300000007, 270.25);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000009, 301.5);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000024, 381.84);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000024, 300000015, 128.06);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000014, 300000027, 835.59);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000005, 300000009, 815.16);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000004, 300000021, 482.83);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000028, 300000024, 502.92);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000004, 300000018, 606.13);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000022, 300000007, 862.26);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000016, 300000002, 468.26);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000014, 300000034, 305.33);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000028, 300000023, 409.6);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000001, 300000009, 61.6);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000025, 300000012, 261.16);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000018, 300000020, 93.48);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000017, 300000018, 418.7);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000031, 300000030, 991.78);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000008, 300000022, 87.88);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000032, 300000001, 31.76);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000016, 300000012, 313.06);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000011, 300000010, 466.95);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000031, 591.38);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000017, 300000025, 824.8);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000002, 300000012, 62.59);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000004, 300000032, 55.57);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000019, 300000027, 259.66);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000030, 300000015, 471.96);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000018, 300000001, 996.04);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000003, 300000014, 266.53);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000032, 300000013, 574.89);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000021, 300000005, 603.19);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000020, 300000005, 733.44);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000007, 300000017, 843.05);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000002, 51.1);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000017, 300000005, 279.43);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000028, 300000004, 430.95);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000030, 300000008, 164.08);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000010, 300000032, 960.97);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000002, 805.2);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000005, 860.85);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000002, 300000012, 733.15);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000020, 300000007, 750.61);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000016, 300000033, 214.81);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000017, 300000000, 575.54);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000011, 300000018, 834.86);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000026, 300000027, 475.96);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000015, 300000003, 434.46);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000015, 300000034, 259.09);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000002, 300000007, 918.42);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000017, 300000022, 37.7);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000003, 300000003, 1.19);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000015, 300000002, 353.85);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000005, 885.37);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000003, 300000000, 255.82);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000021, 300000008, 637.85);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000021, 300000009, 892.9);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000012, 300000020, 190.6);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000030, 300000019, 76.32);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000001, 300000019, 349.35);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000014, 300000003, 555.36);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000010, 300000022, 616.07);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000003, 300000034, 899.32);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000006, 300000031, 620.83);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000022, 300000006, 168.36);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000022, 300000014, 435.29);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000018, 300000010, 702.39);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000027, 300000004, 87.66);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000007, 300000020, 434.72);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000017, 300000023, 690.92);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000029, 237.18);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000026, 300000013, 946.37);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000002, 300000013, 434.48);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000025, 300000018, 122.98);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000021, 300000034, 376.65);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000030, 300000012, 394.06);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000032, 300000017, 33.44);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000020, 300000023, 101.4);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000002, 300000028, 712.47);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000016, 300000021, 386.67);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000012, 300000003, 618.57);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000030, 300000030, 827.22);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000015, 300000009, 875.84);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000023, 300000027, 588.49);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000023, 300000034, 50.04);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000026, 300000027, 351.65);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000028, 300000033, 807.43);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000022, 300000033, 457.09);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000024, 300000032, 707.33);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000032, 300000002, 691.61);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000029, 300000009, 68.76);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000009, 300000011, 728.58);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000006, 300000028, 802.0);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000025, 300000012, 40.04);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000026, 300000000, 885.49);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000032, 300000005, 866.02);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000003, 300000024, 400.86);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000032, 300000008, 577.19);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000001, 300000011, 837.24);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000012, 300000015, 816.67);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000006, 300000013, 523.35);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000033, 394.02);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000015, 300000009, 815.01);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000016, 300000017, 437.68);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000031, 300000026, 16.23);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000028, 300000000, 279.41);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000018, 300000014, 253.98);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000014, 300000000, 660.29);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000013, 835.2);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000025, 300000008, 532.77);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000018, 300000016, 661.74);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000014, 300000002, 511.76);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000031, 300000032, 572.11);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000029, 300000006, 169.73);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000001, 300000028, 652.12);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000016, 300000005, 594.19);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000006, 300000002, 271.04);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000024, 300000032, 278.69);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000003, 300000032, 994.24);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000017, 289.21);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000008, 300000008, 754.83);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000031, 300000006, 221.36);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000007, 300000026, 500.4);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000027, 300000022, 635.73);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000030, 300000033, 219.54);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000034, 401.29);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000001, 300000028, 963.16);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000026, 300000014, 83.59);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000019, 300000017, 853.51);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000000, 300000024, 695.07);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000022, 300000012, 969.39);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000032, 300000006, 921.07);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000026, 300000029, 387.31);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000017, 300000034, 189.39);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000011, 300000010, 803.21);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000011, 300000006, 466.18);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000013, 300000023, 197.16);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000019, 300000019, 651.63);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000009, 300000014, 955.96);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000022, 300000010, 423.37);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000031, 300000022, 898.79);
+insert into withdraws_Money (authorId, employeeId, transaction_amount) values (100000004, 300000027, 407.47);
+
 
 
 --  Book table ------------------
