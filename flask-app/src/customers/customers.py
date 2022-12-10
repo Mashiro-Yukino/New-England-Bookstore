@@ -114,12 +114,26 @@ def borrow_book():
     # update the status to rented if the book is available
     query = f"UPDATE book SET status = 'rented' WHERE bookId = {bookId} AND status = 'available'"
 
-
-
     # update the reserve table if the book is available
     if cursor.execute(query) == 1:
-        cursor.execute(f"INSERT INTO reserve (customerId, bookId, return_time) VALUES ({customerId}, {bookId}, '{return_time}')")
+        cursor.execute(
+            f"INSERT INTO reserve (customerId, bookId, return_time) VALUES ({customerId}, {bookId}, '{return_time}')")
         db.get_db().commit()
         return "Book borrowed successfully"
     else:
         return "Please borrow the available book"
+
+
+@customers.route('/getCertainCustomer/<customerId>', methods=['GET'])
+def get_certain_customer(customerId):
+    cursor = db.get_db().cursor()
+    cursor.execute(f"select  * from customer where customerId = {customerId}")
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
