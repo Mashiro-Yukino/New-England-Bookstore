@@ -6,21 +6,6 @@ from src import db
 employees = Blueprint('employees', __name__)
 
 
-@employees.route('/employees', methods=['GET'])
-def get_customers():
-    cursor = db.get_db().cursor()
-    cursor.execute('select  * from employee')
-    row_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
-
-
 @employees.route('/updateCustomerInfo', methods=['POST'])
 def update_customer_info():
     current_app.logger.info(request.form)
@@ -33,10 +18,10 @@ def update_customer_info():
     # add the number of balance to the current balance, memberType update to the new memberType
     query = f"UPDATE customer SET balance = balance + {balance}, memberType = '{memberType}' WHERE customerId = {customerId}"
 
-
     cursor.execute(query)
     db.get_db().commit()
     return 'Customer info updated successfully'
+
 
 @employees.route('/getCertainCustomer/<customerId>', methods=['GET'])
 def get_certain_customer(customerId):
@@ -51,7 +36,6 @@ def get_certain_customer(customerId):
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
     return the_response
-
 
 
 @employees.route('/generateReport/<reporttype>/<searchYear>', methods=['GET'])
@@ -86,3 +70,21 @@ def generate_report(reporttype, searchYear):
     return the_response
 
 
+@employees.route('/allInfo/<certainCondition>', methods=['GET'])
+def get_allInfo(certainCondition):
+    cursor = db.get_db().cursor()
+    if certainCondition == 'get_customers':
+        cursor.execute('select  * from customer')
+    elif certainCondition == 'get_authors':
+        cursor.execute('select  * from author')
+    elif certainCondition == 'get_books':
+        cursor.execute('select  * from book')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
