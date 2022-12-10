@@ -83,6 +83,10 @@ ALTER TABLE author AUTO_INCREMENT = 100000000;
 -- generate 5 authors with midName.
 
 
+INSERT INTO author (deposit, firstName, midName, lastName, contactEmail)
+VALUES
+    (1000, 'Colas', 'A', 'Hen', 'cola@gmail.com');
+
 INSERT INTO author (firstName, midName, lastName, contactEmail)
 VALUES
     ('Colas', 'A', 'Balk', 'cola2@gmail.com'),
@@ -583,6 +587,7 @@ CREATE TABLE authorBankAccount (
 INSERT INTO authorBankAccount (authorId, bankAccountNum)
 VALUES
     (100000000, 218349705),
+    (100000000, 1235671253),
     (100000001, 126387112),
     (100000002, 127831233),
     (100000003, 981723123),
