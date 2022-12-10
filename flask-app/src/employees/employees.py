@@ -38,36 +38,6 @@ def get_certain_customer(customerId):
     return the_response
 
 
-@employees.route('/generateReport/<reporttype>/<searchYear>', methods=['GET'])
-def generate_report(reporttype, searchYear):
-    cursor = db.get_db().cursor()
-    if reporttype == 'profit':
-        cursor.execute(f"SELECT bookName, sum(pricePerDay * (return_time - borrow_time)) as profit "
-                       f"FROM book NATURAL JOIN reserve "
-                       f"WHERE year(borrow_time) = {searchYear} "
-                       f"GROUP BY bookId "
-                       f"ORDER BY profit DESC")
-
-    elif reporttype == 'authors':
-        # Rank the total number of books borrowed in a year by genre
-        cursor.execute(f"SELECT concat(firstName, ' ', midName, ' ', lastName) as authorName, count(authorId) as bookCount "
-                       f"FROM book NATURAL JOIN author NATURAL JOIN reserve "
-                       f"WHERE year(borrow_time) = {searchYear} "
-                       f"GROUP BY authorId "
-                       f"ORDER BY bookCount DESC")
-    elif reporttype == 'genre':
-        # Rank the total number of books borrowed in a year written by each author
-        cursor.execute(f"SELECT category, count(category) as count from bookGenre natural join reserve "
-                       f"WHERE YEAR(borrow_time) = {searchYear} GROUP BY category ORDER BY count DESC")
-    row_headers = [x[0] for x in cursor.description]
-    json_data = []
-    theData = cursor.fetchall()
-    for row in theData:
-        json_data.append(dict(zip(row_headers, row)))
-    the_response = make_response(jsonify(json_data))
-    the_response.status_code = 200
-    the_response.mimetype = 'application/json'
-    return the_response
 
 
 @employees.route('/allInfo/<certainCondition>', methods=['GET'])
@@ -79,6 +49,23 @@ def get_allInfo(certainCondition):
         cursor.execute('select  * from author')
     elif certainCondition == 'get_books':
         cursor.execute('select  * from book')
+    elif certainCondition == 'get_reserves':
+        cursor.execute('select  * from reserve')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+
+@employees.route('/checkReserve', methods=['GET'])
+def check_reserve():
+    cursor = db.get_db().cursor()
+    cursor.execute('select  * from reserve')
     row_headers = [x[0] for x in cursor.description]
     json_data = []
     theData = cursor.fetchall()
