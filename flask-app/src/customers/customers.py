@@ -1,4 +1,4 @@
-from flask import Blueprint, request, jsonify, make_response
+from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
@@ -102,5 +102,16 @@ def get_reserve_info():
     return the_response
 
 
+@customers.route('/borrowBook', methods=['POST'])
+def borrow_book():
+    current_app.logger.info(request.form)
+    cursor = db.get_db().cursor()
 
+    bookId = request.form['bookId']
 
+    # update the status to rented if the book is available
+    query = f"UPDATE book SET status = 'rented' WHERE bookId = {bookId} AND status = 'available'"
+
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Book borrowed successfully'
