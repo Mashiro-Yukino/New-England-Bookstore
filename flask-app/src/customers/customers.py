@@ -2,8 +2,8 @@ from flask import Blueprint, request, jsonify, make_response, current_app
 import json
 from src import db
 
-
 customers = Blueprint('customers', __name__)
+
 
 # Get all customers from the DB
 
@@ -107,11 +107,18 @@ def borrow_book():
     current_app.logger.info(request.form)
     cursor = db.get_db().cursor()
 
+    customerId = request.form['customerId']
     bookId = request.form['bookId']
+    return_time = request.form['return_time']
 
     # update the status to rented if the book is available
     query = f"UPDATE book SET status = 'rented' WHERE bookId = {bookId} AND status = 'available'"
 
+    # update the reserve table
+    query2 = f"INSERT INTO reserve (customerId, bookId, borrow_time, return_time) VALUES ({customerId}, {bookId}, now(), '{return_time}')"
+
     cursor.execute(query)
+    cursor.execute(query2)
+
     db.get_db().commit()
     return 'Book borrowed successfully'
