@@ -114,11 +114,12 @@ def borrow_book():
     # update the status to rented if the book is available
     query = f"UPDATE book SET status = 'rented' WHERE bookId = {bookId} AND status = 'available'"
 
-    # update the reserve table
-    query2 = f"INSERT INTO reserve (customerId, bookId, borrow_time, return_time) VALUES ({customerId}, {bookId}, now(), '{return_time}')"
 
-    cursor.execute(query)
-    cursor.execute(query2)
 
-    db.get_db().commit()
-    return 'Book borrowed successfully'
+    # update the reserve table if the book is available
+    if cursor.execute(query) == 1:
+        cursor.execute(f"INSERT INTO reserve (customerId, bookId, return_time) VALUES ({customerId}, {bookId}, '{return_time}')")
+        db.get_db().commit()
+        return "Book borrowed successfully"
+    else:
+        return "Please borrow the available book"
