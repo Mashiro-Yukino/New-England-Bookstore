@@ -38,8 +38,6 @@ def get_certain_customer(customerId):
     return the_response
 
 
-
-
 @employees.route('/allInfo/<certainCondition>', methods=['GET'])
 def get_allInfo(certainCondition):
     cursor = db.get_db().cursor()
@@ -75,3 +73,52 @@ def check_reserve():
     the_response.status_code = 200
     the_response.mimetype = 'application/json'
     return the_response
+
+
+@employees.route('/checkReserve/<authorID>', methods=['GET'])
+def check_reserve_author(authorID):
+    cursor = db.get_db().cursor()
+    cursor.execute(
+        f'select authorId, bookId, bookName, borrow_time, customerId, pricePerDay, reserveId, return_time '
+        f'from reserve natural join book natural join author where authorId = {authorID}')
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+
+@employees.route('/updateAuthorBalance', methods=['POST'])
+def update_author_balance():
+    current_app.logger.info(request.form)
+    cursor = db.get_db().cursor()
+
+    authorId = request.form['authorId']
+    deposit_Change = request.form['deposit_Change']
+
+    # add the number of balance to the current balance, memberType update to the new memberType
+    query = f"UPDATE author SET deposit = deposit + {deposit_Change} WHERE authorId = {authorId}"
+
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Author balance updated successfully'
+
+
+@employees.route('/getCertainAuthor/<authorID>', methods=['GET'])
+def get_certain_author(authorID):
+    cursor = db.get_db().cursor()
+    cursor.execute(f"select  * from author where authorId = {authorID}")
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
