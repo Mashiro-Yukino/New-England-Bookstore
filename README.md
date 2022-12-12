@@ -23,3 +23,11 @@
 
 
 ## User Interface
+  
+### An integral interface
+  
+<img width="970" alt="7B8BFA56-8EFF-46F0-A54A-61BCD98CA669" src="https://user-images.githubusercontent.com/67991315/206945613-ef5480d6-7149-4a63-b2d2-ae200f585df4.png">
+
+  
+--- 
+Our database project features an integral interface that enables authors, employees, and customers to access the system and perform their respective roles. The interface is tailored to the unique needs of each user group, providing them with the tools and features they need to effectively manage book data in the bookstore. 
