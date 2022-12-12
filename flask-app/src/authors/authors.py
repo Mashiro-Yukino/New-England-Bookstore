@@ -79,8 +79,8 @@ def read_report(reporttype, searchYear):
                        f"ORDER BY profit DESC")
 
     elif reporttype == 'authors':
-        # Rank the total number of books borrowed in a year by genre
-        cursor.execute(f"SELECT concat(firstName, ' ', midName, ' ', lastName) as authorName, count(authorId) as bookCount "
+        # Rank the total number of books borrowed in a year by genre. Ignore midname if it is null.
+        cursor.execute(f"SELECT concat(firstName, ' ', ifnull(midName, ''), ' ', lastName) as authorName, count(authorId) as bookCount "
                        f"FROM book NATURAL JOIN author NATURAL JOIN reserve "
                        f"WHERE year(borrow_time) = {searchYear} "
                        f"GROUP BY authorId "
