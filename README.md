@@ -136,3 +136,12 @@ Employees have the ability to update customers' membership status and change the
 ![35262870-7b243b8126f0e68e30195c82b8cc112c](https://user-images.githubusercontent.com/67991315/207081144-86d28549-bfee-44db-9ecd-577a7bb29cde.png)
 
 ---
+  
+  
+#### Author Support
+
+Employees can easily distribute the corresponding revenue to book authors by using the `Author Support` page, which automatically displays all borrowing history for the book written by a specific author. This allows employees to accurately calculate the revenue due to each author and ensure that they receive their fair share of profits. This feature improves the overall efficiency of the system and helps support authors.
+  
+  
+![35268637-dc34cd26efe0812ababb75824f3db2e4](https://user-images.githubusercontent.com/67991315/207121111-f3f3becc-84ae-4cd4-978f-598fa71cd32e.png)
+
