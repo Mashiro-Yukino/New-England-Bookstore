@@ -123,7 +123,8 @@ Customers can search for the books they want by entering the author's ID and boo
 
 Employees have full access to the database, enabling them to select the information relevant to their tasks and update customer and author information as needed. They also have the right to update customer, author, and book information in the database as needed. This ensures that the information in the database is accurate and up-to-date. The ability to update the information allows employees to efficiently manage customers and authors, and ensures that authors receive their corresponding profits. 
 
-![35268379-fca2e771f1e30382e22da17719563977](https://user-images.githubusercontent.com/67991315/207119475-bb826695-cb52-408f-ad1d-237b783eb1f6.png)
+![35268690-ce8958bbf2e79a638fc3e99c33e5ab96](https://user-images.githubusercontent.com/67991315/207121549-dea83744-386f-4cb3-9fcb-d6d096361d25.png)
+
 
 
 ---
@@ -144,4 +145,16 @@ Employees can easily distribute the corresponding revenue to book authors by usi
   
   
 ![35268637-dc34cd26efe0812ababb75824f3db2e4](https://user-images.githubusercontent.com/67991315/207121111-f3f3becc-84ae-4cd4-978f-598fa71cd32e.png)
+
+#### Add New Members (Authors/Customers)
+
+Employees can easily add new customers or authors to the database by inputting their necessary information. This allows employees to quickly and easily manage the database and keep it up-to-date. The ability to add new members helps ensures that all relevant information is accurately recorded.
+
+<img width="1053" alt="截屏2022-12-12 13 12 13" src="https://user-images.githubusercontent.com/67991315/207122223-f4676c7e-c413-452f-8d0a-38d32a0dda76.png">
+
+![35268803-36027e7b0d4bdb9d72e5e70648a282cd](https://user-images.githubusercontent.com/67991315/207122327-c2006ca3-9979-4f04-9390-08159a2015d5.png)
+
+ ---
+
+
 
