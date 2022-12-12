@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
 - [Data Modeling](#data-modeling)
 - [User Interface](#user-interface)
+- [Future Work](#future-work)
 
 
 ## Introduction
@@ -165,6 +166,16 @@ As an employee, you have the ability to easily add new books to the database by 
   
   
 ![35268865-73e8f5a322d0208bf44d0c1d72169b91](https://user-images.githubusercontent.com/67991315/207122612-53c81e6e-2b25-42dd-a1e9-ddad66013a47.png)
+
+
+## Future Work
+
+- We automate the transactions that are currently done manually by employees. For example, the system could be designed to automatically handle the borrowing of books, deduct the appropriate amount from customers' accounts, and distribute revenue to authors based on book borrowing history. 
+
+- Introduce a management structure in the future. This could involve hiring managers to oversee the work of employees and to ensure that the business is running smoothly. The managers could be responsible for tasks such as setting goals and objectives, providing guidance and support to employees, and evaluating their performance. 
+
+- 
+
 
 
 
