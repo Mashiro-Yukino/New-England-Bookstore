@@ -44,6 +44,14 @@ As a customer, you can use the database to find your personal information, searc
 
   
 ---
+
+#### Personal Information
+  
+  
+If the customer information in the database matches the information provided by the customer, the database will automatically display the customer's information in a table or view. 
+
+![35240215-c5344f3c4e77297a99c781ba236990fe](https://user-images.githubusercontent.com/67991315/206946555-a556dd12-2477-45b9-bbb9-7745703e756c.png)
+
   
 
   
