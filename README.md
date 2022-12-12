@@ -9,7 +9,7 @@
 
 ## Introduction
   
-  Our product is designed to provide a comprehensive system for managing book borrowing, returning, and updating in a bookstore. We aim to create a database that connects the three key personas in this process – customers, employees, and authors – in a seamless and intuitive way. When information about a book is updated in the bookstore, our system will synchronize the relevant data for each persona, ensuring that everyone has access to the latest information. Unlike most current book library management systems, our system also includes a dedicated interface for book authors, recognizing the importance of their involvement in the process. Overall, our goal is to create a user-friendly and efficient solution for managing book data in a bookstore.
+   Our product is designed to provide a comprehensive system for managing book borrowing, returning, and updating in a bookstore. We aim to create a database that connects the three key personas in this process – customers, employees, and authors – in a seamless and intuitive way. When information about a book is updated in the bookstore, our system will synchronize the relevant data for each persona, ensuring that everyone has access to the latest information. Unlike most current book library management systems, our system also includes a dedicated interface for book authors, recognizing the importance of their involvement in the process. Overall, our goal is to create a user-friendly and efficient solution for managing book data in a bookstore.
 
 
 ## Data Modeling
