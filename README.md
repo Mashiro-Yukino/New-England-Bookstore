@@ -39,8 +39,9 @@ Our database project features an integral interface that enables authors, employ
 As a customer, you can use the database to find your personal information, search for available books, and view your borrowing history. You can use the search function to quickly find books that interest you, and you can view your personal information, such as your contact details and account status, at any time. Additionally, you can check your borrowing history to see which books you have borrowed in the past, and when they are due for return. 
   
   
-  
-<img width="804" alt="10E0BF8AD13CFB7687340E36C7934A0D" src="https://user-images.githubusercontent.com/67991315/206946143-3c6dbce9-c17f-4acb-9297-c47219c1b26c.png">
+<img width="755" alt="F7715E774AF69B9EB5C6EEE2F3B7CD1D" src="https://user-images.githubusercontent.com/67991315/207118047-2843e7d5-f188-43d3-b209-aa8d054c958a.png">
+
+
 
   
 ---
