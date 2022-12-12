@@ -170,7 +170,7 @@ As an employee, you have the ability to easily add new books to the database by 
 
 ## Future Work
 
-- We automate the transactions that are currently done manually by employees. For example, the system could be designed to automatically handle the borrowing of books, deduct the appropriate amount from customers' accounts, and distribute revenue to authors based on book borrowing history. 
+- Try to automate the transactions that are currently done manually by employees. For example, the system could be designed to automatically handle the borrowing of books, deduct the appropriate amount from customers' accounts, and distribute revenue to authors based on book borrowing history. 
 
 - Introduce a management structure in the future. This could involve hiring managers to oversee the work of employees and to ensure that the business is running smoothly. The managers could be responsible for tasks such as setting goals and objectives, providing guidance and support to employees, and evaluating their performance. 
 
