@@ -1,4 +1,16 @@
-# 111111
+# <p align="center">New England Book Store
+
+<p align="center">Team : Yinzheng Xiong, Teng Li
+
+## Table of Contents:
+- [Introduction](#introduction)
+- [Data Modeling](#data-modeling)
+
+
+## Introduction
+
+
+## Data Modeling
 
 ![203210674-cd210cf5-050f-43a5-bd2e-a396203e32cd](https://user-images.githubusercontent.com/67991315/206334418-92798d5a-111b-4b62-aeb2-b60a92a1ee0e.png)
 
