@@ -102,7 +102,8 @@ If an author's information is verified in the database, their bank account infor
   
 As an author, you can use the database to access a range of reports and analytics tools that provide insights into the performance and popularity of your books, as well as the overall trends in the book industry. The database offers three options for reports – profit, genre, and authors – each of which provides different information and insights. The `profit` option allows you to see which books are currently the most popular and profitable, while the `genre` option shows you the trends and patterns in different book genres. The `authors` option allows you to see which authors are currently the most popular and successful, providing valuable insights that can help you to make informed decisions about your writing and publishing.
 
-![35240865-377ff64dd42a72fc32ef16d3265abf00](https://user-images.githubusercontent.com/67991315/206950252-cf848e6d-1887-4a2d-80a5-faea09e6caca.png)
+
+![206950252-cf848e6d-1887-4a2d-80a5-faea09e6caca](https://user-images.githubusercontent.com/67991315/206950624-b9fa5253-35ed-4acc-9164-d434ce39e22d.png)
 
   
   
