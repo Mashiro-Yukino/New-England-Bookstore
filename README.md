@@ -74,6 +74,13 @@ Customers can access their book borrowing history by going to the Borrowing Hist
 
 ---
 
-  
 
+### Author Interface
+
+As an author, you can use the database to withdraw money that you have earned from book rentals to your specified bank account. You can access your earnings information and initiate a withdrawal through the specified interface. Additionally, the database provides a range of reports and analytics tools that allow you to track the performance and popularity of your books, as well as the overall trends in the book industry. You can use these reports to gain insights into genre trends, profit rankings, and other data, and you can use this information to inform your writing and publishing decisions. 
+
+  
+<img width="645" alt="6A790E1A-4010-4958-8DF5-37AB2C95C4F6" src="https://user-images.githubusercontent.com/67991315/206949158-890f8b02-e092-4536-9c64-8fae1ae7fcc9.png">
+
+ ---
   
