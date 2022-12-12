@@ -122,3 +122,65 @@ def get_certain_author(authorID):
     the_response.mimetype = 'application/json'
     return the_response
 
+# @employees.route('/updateCustomerInfo', methods=['POST'])
+# def update_customer_info():
+#     current_app.logger.info(request.form)
+#     cursor = db.get_db().cursor()
+#
+#     memberType = request.form['memberType']
+#     balance = request.form['balance']
+#     customerId = request.form['customerId']
+#
+#     # add the number of balance to the current balance, memberType update to the new memberType
+#     query = f"UPDATE customer SET balance = balance + {balance}, memberType = '{memberType}' WHERE customerId = {customerId}"
+#
+#     cursor.execute(query)
+#     db.get_db().commit()
+#     return 'Customer info updated successfully'
+
+# @employees.route('/newMember', methods=['POST'])
+# def new_member():
+
+
+@employees.route('/newAuthor', methods=['POST'])
+def new_author():
+    current_app.logger.info(request.form)
+    cursor = db.get_db().cursor()
+
+    firstName = request.form['firstName']
+    middleName = request.form['middleName']
+    lastName = request.form['lastName']
+    email = request.form['email']
+
+    # add the number of balance to the current balance, memberType update to the new memberType,
+    # there is no middle name, just use first name and last name
+    if middleName == '':
+        query = f"INSERT INTO author(firstName, lastName, contactEmail) VALUES ('{firstName}', '{lastName}', '{email}')"
+    else:
+        query = f"INSERT INTO author(firstName, midName, lastName, contactEmail) VALUES ('{firstName}', '{middleName}', '{lastName}', '{email}')"
+
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Author added successfully'
+
+
+@employees.route('/newCustomer', methods=['POST'])
+def new_customer():
+    current_app.logger.info(request.form)
+    cursor = db.get_db().cursor()
+
+    firstName = request.form['firstName']
+    middleName = request.form['middleName']
+    lastName = request.form['lastName']
+    birth_date = request.form['birth_date']
+
+    # add the number of balance to the current balance, memberType update to the new memberType,
+    # there is no middle name, just use first name and last name
+    if middleName == '':
+        query = f"INSERT INTO customer(balance, memberType, firstName, lastName, birth_date) VALUES (0, 'regular', '{firstName}', '{lastName}', '{birth_date}')"
+    else:
+        query = f"INSERT INTO customer(balance, memberType, firstName, midName, lastName, birth_date) VALUES (0, 'regular', '{firstName}', '{middleName}', '{lastName}', '{birth_date}')"
+
+    cursor.execute(query)
+    db.get_db().commit()
+    return 'Customer added successfully'
