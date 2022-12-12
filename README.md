@@ -111,7 +111,7 @@ As an author, you can use the database to access a range of reports and analytic
 
 ### Employee Interface
 
-Employees have full access to the database information, giving them the ability to select information relevant to their tasks (query all customers, authors, books, book borrowing records). They also have the right to update customer and author information in the database as needed. This ensures that all information is up-to-date and accurate. The right to update this information gives employees the flexibility to manage customers and gives the author the corresponding profit. This helps ensure that the data is always current.
+Employees have full access to the database, enabling them to select the information relevant to their tasks and update customer and author information as needed. This ensures that the information in the database is accurate and up-to-date. The ability to update the information allows employees to efficiently manage customers and authors, and ensures that authors receive their corresponding profits. 
 
 ![35262409-25dc5f1c2c95f84cb997474d6cf00f81](https://user-images.githubusercontent.com/67991315/207077869-fc3a1249-8bf1-4bae-9174-104c476c308f.png)
 
