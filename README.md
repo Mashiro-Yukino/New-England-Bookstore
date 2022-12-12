@@ -82,5 +82,16 @@ As an author, you can use the database to withdraw money that you have earned fr
   
 <img width="645" alt="6A790E1A-4010-4958-8DF5-37AB2C95C4F6" src="https://user-images.githubusercontent.com/67991315/206949158-890f8b02-e092-4536-9c64-8fae1ae7fcc9.png">
 
- ---
+---
   
+### Withdraw Money
+
+
+If an author's information is verified in the database, their bank account information will be automatically displayed in their profile. Authors can then select the bank account they want to use for withdrawals, and they can initiate a withdrawal by clicking the withdraw_money button in the page. This will transfer all the money from the author's deposit to their selected bank account, allowing them to easily access the funds they have earned from book rentals. 
+
+![35240805-b29e968033eba0de363cf6853699aab4](https://user-images.githubusercontent.com/67991315/206949856-92900967-929a-4b65-984b-8c33b5df9c8f.png)
+
+  
+  
+  
+---
