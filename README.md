@@ -174,7 +174,7 @@ As an employee, you have the ability to easily add new books to the database by 
 
 - Introduce a management structure in the future. This could involve hiring managers to oversee the work of employees and to ensure that the business is running smoothly. The managers could be responsible for tasks such as setting goals and objectives, providing guidance and support to employees, and evaluating their performance. 
 
-- 
+- Currently, the book store reports are directly shown to authors. In the future, it may be more secure to have employees generate the reports and decide which reports can be made available to the public. This could help protect the privacy of the bookstore and its customers by ensuring that sensitive information is not accidentally disclosed. The employees could be responsible for carefully reviewing the reports and deciding which ones can be safely shared with the public, while keeping others private.
 
 
 
