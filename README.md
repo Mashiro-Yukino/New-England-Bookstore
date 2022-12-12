@@ -109,6 +109,15 @@ As an author, you can use the database to access a range of reports and analytic
   
   
 ---
+  
+  
+#### Find Book
+
+Customers can search for the books they want by entering the author's ID and book name into our application. The application will then filter the results and show the customers the availability of the books that match their search criteria. This allows customers to easily find the books they are looking for and see whether they are available for purchase or loan.
+  
+![35268191-9ada3c13c6c859b1faf66fa1f4b99bae](https://user-images.githubusercontent.com/67991315/207118275-010586b3-17c5-4c18-bc75-59eea072a9a3.png)
+
+---
 
 ### Employee Interface
 
