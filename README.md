@@ -121,9 +121,10 @@ Customers can search for the books they want by entering the author's ID and boo
 
 ### Employee Interface
 
-Employees have full access to the database, enabling them to select the information relevant to their tasks and update customer and author information as needed. This ensures that the information in the database is accurate and up-to-date. The ability to update the information allows employees to efficiently manage customers and authors, and ensures that authors receive their corresponding profits. 
+Employees have full access to the database, enabling them to select the information relevant to their tasks and update customer and author information as needed. They also have the right to update customer, author, and book information in the database as needed. This ensures that the information in the database is accurate and up-to-date. The ability to update the information allows employees to efficiently manage customers and authors, and ensures that authors receive their corresponding profits. 
 
-![35262409-25dc5f1c2c95f84cb997474d6cf00f81](https://user-images.githubusercontent.com/67991315/207077869-fc3a1249-8bf1-4bae-9174-104c476c308f.png)
+![35268379-fca2e771f1e30382e22da17719563977](https://user-images.githubusercontent.com/67991315/207119475-bb826695-cb52-408f-ad1d-237b783eb1f6.png)
+
 
 ---
 
