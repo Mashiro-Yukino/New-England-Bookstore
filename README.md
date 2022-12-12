@@ -64,5 +64,16 @@ Customers can easily search for books with the status of 'available' directly on
 
 ---
   
+  
+  
+#### Borrowing History
+  
+Customers can access their book borrowing history by going to the Borrowing History page. This page allows customers to view a list of all the books they have borrowed in the past. Customers can also use the filter conditions on the page to specify the criteria for the books they want to see, such as the year they borrowed the book or the current status of the book (returned, unreturned, or all). This enables customers to easily find the information they need and manage their borrowing history, ensuring that they can keep track of the books they have borrowed and when they are due for return.
+
+![35240467-627ed236546a2f7133c030f15409d920](https://user-images.githubusercontent.com/67991315/206948126-640c1f75-5046-4dc7-8a8e-4f076856fa88.png)
+
+---
+
+  
 
   
