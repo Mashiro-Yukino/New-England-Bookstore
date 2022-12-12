@@ -152,9 +152,11 @@ Employees can easily add new customers or authors to the database by inputting t
 
 <img width="1053" alt="截屏2022-12-12 13 12 13" src="https://user-images.githubusercontent.com/67991315/207122223-f4676c7e-c413-452f-8d0a-38d32a0dda76.png">
 
+---
+
 ![35268803-36027e7b0d4bdb9d72e5e70648a282cd](https://user-images.githubusercontent.com/67991315/207122327-c2006ca3-9979-4f04-9390-08159a2015d5.png)
 
- ---
+---
 
 
 
