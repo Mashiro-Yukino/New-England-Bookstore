@@ -51,7 +51,18 @@ As a customer, you can use the database to find your personal information, searc
 If the customer information in the database matches the information provided by the customer, the database will automatically display the customer's information in a table or view. 
 
 ![35240215-c5344f3c4e77297a99c781ba236990fe](https://user-images.githubusercontent.com/67991315/206946555-a556dd12-2477-45b9-bbb9-7745703e756c.png)
+  
+  
+---
 
+#### Available Books ( Borrow Books )
+  
+Customers can easily search for books with the status of 'available' directly on the loan screen in the database. To do this, simply navigate to the `Borrow Books`page and use the search function to find books that are currently available for borrowing. Customers can search by book name or other criteria, and the database will display a list of available books that match their search. When you see the book you want, simply input the BookId, return Date and click the 'submit' button to initiate the loan. The database will automatically update the book's status and record the loan in the customer’s personal borrowing history, making it easy for customers to manage their book borrowing needs.
+
+
+![35240296-d123fb9bb7a3ee3377e7107cdc084fb8](https://user-images.githubusercontent.com/67991315/206947098-5c7e6ad4-dd65-4f3c-806f-567768a5ba0d.png)
+
+---
   
 
   
