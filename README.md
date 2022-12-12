@@ -129,6 +129,8 @@ Employees have full access to the database, enabling them to select the informat
 ---
 
 #### Customer Support
+
+Employees have the ability to update customers' membership status and change their balance based on their borrow record. The customer support system will automatically display the corresponding customer information as long as employees provide the valid customer ID. This allows employees to efficiently manage customers and their accounts, ensuring that the information is accurate and up-to-date.
   
   
 ![35262870-7b243b8126f0e68e30195c82b8cc112c](https://user-images.githubusercontent.com/67991315/207081144-86d28549-bfee-44db-9ecd-577a7bb29cde.png)
