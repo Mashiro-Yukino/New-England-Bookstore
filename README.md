@@ -24,10 +24,26 @@
 
 ## User Interface
   
-### An integral interface
+### Integral interface
+
+Our database project features an integral interface that enables authors, employees, and customers to access the system and perform their respective roles. The interface is tailored to the unique needs of each user group, providing them with the tools and features they need to effectively manage book data in the bookstore. 
   
 <img width="970" alt="7B8BFA56-8EFF-46F0-A54A-61BCD98CA669" src="https://user-images.githubusercontent.com/67991315/206945613-ef5480d6-7149-4a63-b2d2-ae200f585df4.png">
 
   
 --- 
-Our database project features an integral interface that enables authors, employees, and customers to access the system and perform their respective roles. The interface is tailored to the unique needs of each user group, providing them with the tools and features they need to effectively manage book data in the bookstore. 
+
+
+### Customer Interface
+  
+As a customer, you can use the database to find your personal information, search for available books, and view your borrowing history. You can use the search function to quickly find books that interest you, and you can view your personal information, such as your contact details and account status, at any time. Additionally, you can check your borrowing history to see which books you have borrowed in the past, and when they are due for return. 
+  
+  
+  
+<img width="804" alt="10E0BF8AD13CFB7687340E36C7934A0D" src="https://user-images.githubusercontent.com/67991315/206946143-3c6dbce9-c17f-4acb-9297-c47219c1b26c.png">
+
+  
+---
+  
+
+  
