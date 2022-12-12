@@ -158,5 +158,14 @@ Employees can easily add new customers or authors to the database by inputting t
 
 ---
 
+#### Add New Books
+
+As an employee, you have the ability to easily add new books to the database by inputting the necessary information, such as the author's ID, the price per day, the book name, and the status of the book. 
+
+  
+  
+![35268865-73e8f5a322d0208bf44d0c1d72169b91](https://user-images.githubusercontent.com/67991315/207122612-53c81e6e-2b25-42dd-a1e9-ddad66013a47.png)
+
+
 
 
