@@ -122,25 +122,6 @@ def get_certain_author(authorID):
     the_response.mimetype = 'application/json'
     return the_response
 
-# @employees.route('/updateCustomerInfo', methods=['POST'])
-# def update_customer_info():
-#     current_app.logger.info(request.form)
-#     cursor = db.get_db().cursor()
-#
-#     memberType = request.form['memberType']
-#     balance = request.form['balance']
-#     customerId = request.form['customerId']
-#
-#     # add the number of balance to the current balance, memberType update to the new memberType
-#     query = f"UPDATE customer SET balance = balance + {balance}, memberType = '{memberType}' WHERE customerId = {customerId}"
-#
-#     cursor.execute(query)
-#     db.get_db().commit()
-#     return 'Customer info updated successfully'
-
-# @employees.route('/newMember', methods=['POST'])
-# def new_member():
-
 
 @employees.route('/newAuthor', methods=['POST'])
 def new_author():
