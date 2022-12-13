@@ -2,7 +2,7 @@
 
 <p align="center">Team : Yinzheng Xiong, Teng Li
 
-## Presentation Link : 
+## Walkthrough Video: 
   https://youtu.be/bnOrbdMgS-g
 
 ## Table of Contents:
