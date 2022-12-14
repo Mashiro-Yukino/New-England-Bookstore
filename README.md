@@ -3,7 +3,9 @@
 <p align="center">Team : Yinzheng Xiong, Teng Li
 
 ## Walkthrough Video: 
-  https://youtu.be/bnOrbdMgS-g
+  https://www.youtube.com/watch?v=TWBbfesBEK8 
+  
+  (Please ignore the link in the submission google form, and this is the updated walkthrough video. Thank you & enjoy!)
 
 ## Table of Contents:
 - [Introduction](#introduction)
