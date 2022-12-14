@@ -155,7 +155,7 @@ Employees can easily distribute the corresponding revenue to book authors by usi
 
 #### Add New Members (Authors/Customers)
 
-Employees can easily add new customers or authors to the database by inputting their necessary information. This allows employees to quickly and easily manage the database and keep it up-to-date. The ability to add new members helps ensures that all relevant information is accurately recorded.
+Employees can easily add new customers or authors to the database by inputting their necessary information. This allows employees to quickly and easily manage the database and keep it up-to-date. The ability to add new members helps ensures that all relevant information is accurately recorded. The table will automatically display the new member's information after they are added to the bookstore's database.
 
 <img width="993" alt="FD53E35F64C7C39AC5CF2631BAD1A0AB" src="https://user-images.githubusercontent.com/67991315/207476831-349aabf7-cc61-4d5c-9385-0b9b9c0f20f1.png">
 <img width="995" alt="8DEFF3C8AE3D6A2142B79B5A73CB228C" src="https://user-images.githubusercontent.com/67991315/207476843-841d2b39-e358-4849-8412-8067301eaee0.png">
