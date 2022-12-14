@@ -165,3 +165,59 @@ def new_customer():
     cursor.execute(query)
     db.get_db().commit()
     return 'Customer added successfully'
+
+
+@employees.route('/getNewCustomer/<firstName>/<middleName>/<lastName>/<birth_date>', methods=['GET'])
+def get_new_customer(firstName, middleName, lastName, birth_date):
+    cursor = db.get_db().cursor()
+    if middleName == 'null':
+        cursor.execute(
+            f"select  * from customer where firstName = '{firstName}' and lastName = '{lastName}' and birth_date = '{birth_date}'")
+    else:
+        cursor.execute(
+            f"select  * from customer where firstName = '{firstName}' and midName = '{middleName}' and lastName = '{lastName}' and birth_date = '{birth_date}'")
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+
+@employees.route('/getNewAuthor/<firstName>/<middleName>/<lastName>/<email>', methods=['GET'])
+def get_new_author(firstName, middleName, lastName, email):
+    cursor = db.get_db().cursor()
+    if middleName == 'null':
+        cursor.execute(
+            f"select  * from author where firstName = '{firstName}' and lastName = '{lastName}' and contactEmail = '{email}'")
+    else:
+        cursor.execute(
+            f"select  * from author where firstName = '{firstName}' and midName = '{middleName}' and lastName = '{lastName}' and contactEmail = '{email}'")
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
+
+
+@employees.route('/getNewBook/<authorId>/<pricePerDay>/<bookName>/<status>/<booktype>', methods=['GET'])
+def get_new_book(authorId, pricePerDay, bookName, status, booktype):
+    cursor = db.get_db().cursor()
+    cursor.execute(
+        f"select  * from book where authorId = '{authorId}' and pricePerDay = '{pricePerDay}' and bookName = '{bookName}' and status = '{status}' and booktype = '{booktype}'")
+    row_headers = [x[0] for x in cursor.description]
+    json_data = []
+    theData = cursor.fetchall()
+    for row in theData:
+        json_data.append(dict(zip(row_headers, row)))
+    the_response = make_response(jsonify(json_data))
+    the_response.status_code = 200
+    the_response.mimetype = 'application/json'
+    return the_response
