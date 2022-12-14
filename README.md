@@ -157,11 +157,13 @@ Employees can easily distribute the corresponding revenue to book authors by usi
 
 Employees can easily add new customers or authors to the database by inputting their necessary information. This allows employees to quickly and easily manage the database and keep it up-to-date. The ability to add new members helps ensures that all relevant information is accurately recorded.
 
-<img width="1053" alt="截屏2022-12-12 13 12 13" src="https://user-images.githubusercontent.com/67991315/207122223-f4676c7e-c413-452f-8d0a-38d32a0dda76.png">
+<img width="993" alt="FD53E35F64C7C39AC5CF2631BAD1A0AB" src="https://user-images.githubusercontent.com/67991315/207476831-349aabf7-cc61-4d5c-9385-0b9b9c0f20f1.png">
+<img width="995" alt="8DEFF3C8AE3D6A2142B79B5A73CB228C" src="https://user-images.githubusercontent.com/67991315/207476843-841d2b39-e358-4849-8412-8067301eaee0.png">
+
 
 ---
 
-![35268803-36027e7b0d4bdb9d72e5e70648a282cd](https://user-images.githubusercontent.com/67991315/207122327-c2006ca3-9979-4f04-9390-08159a2015d5.png)
+![35317054-23d74af95b134947eac84bceee608eaf](https://user-images.githubusercontent.com/67991315/207476711-90b79ec0-0ea6-4ea6-9dfc-65dc7edfde2e.png)
 
 ---
 
