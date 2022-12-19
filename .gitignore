@@ -4,3 +4,9 @@ secrets/db_root_password.txt
 __pycache__
 *.xml
 *.iml
+*.sql
+*.yml
+*.py
+flask-app/Dockerfile
+*.txt
+*.example
